@@ -1,0 +1,11 @@
+
+Mouse action	                Playwright method
+
+Single click	                locator.click()
+Double click	                locator.dblclick()
+Right click	                    locator.click({ button: 'right' })
+Hover	                        locator.hover()
+Mouse move	                    page.mouse.move(500, 300)
+Mouse down	                    page.mouse.down()
+Mouse up	                    page.mouse.up()
+Mouse wheel / scroll	        page.mouse.wheel(0, 500)
