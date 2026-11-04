@@ -1,0 +1,26 @@
+Key	            Usage
+
+Enter	        Submit or confirm
+Tab	            Move to next element (Tab navigation between fields)
+Escape	        Close popup/dialog
+Space	        Select or activate
+Backspace	    Delete previous character
+Delete	        Delete next character
+ArrowDown	    Move down
+ArrowUp	        Move up
+Home	        Move to beginning
+End	            Move to end
+Control+A       select all text
+
+
+page.keyboard.type() - simulates typing individual characters.
+page.keyboard.insertText() - inserts text directly without generating individual keydown/keyup events.
+page.keyboard.press('Control+A') - Used to press keyboard key.
+
+Locator-based keyboard actions -
+
+Method	                        Purpose
+locator.press()	                Press a keyboard key
+locator.pressSequentially()	    Type text character by character
+locator.fill()	                Enter text directly
+locator.clear()	                Clear textbox
