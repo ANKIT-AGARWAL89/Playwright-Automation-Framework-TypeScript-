@@ -1,0 +1,9 @@
+
+Method	                                        Purpose
+
+locator.setInputFiles()	                        Directly uploads files
+locator.setInputFiles([])	                    Clears uploaded files
+multiple attribute	                            Allows multiple files in one input
+waitForEvent('filechooser')	                    Waits for the file chooser event
+fileChooser.setFiles()	                        Uploads files through the file chooser
+fileChooser.isMultiple();                       Returns whether this file chooser accepts multiple files.
