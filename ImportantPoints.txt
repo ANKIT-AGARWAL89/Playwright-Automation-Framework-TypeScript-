@@ -1,0 +1,19 @@
+1. if any statement returning promise then needs to write "await" keyword infront of statement. also needs to add "async" keyword.
+2. You can customize the getbytestId locator if it change in DOM from development - just go to congig.ts and add testIdAttribute:'data-pw';
+3. products.first().textContent() => will give the first element as text from products list
+4. products.nth(4).textContent() => will give the 4th element as text from products list
+5. products.allTextContents() => will give all text from the product list.
+6. in Xpath => li (list tag) - containing number of element then //li[position()=5] method we can use.
+7. for locator we don't need await but for action and validation needs await.\
+8. Handling JavaScript Alert During Click
+- Clicking the Copy option triggers a JavaScript alert.
+- The alert blocks further browser actions.
+- Playwright may wait for click() to complete while the alert is open. - complete doesn't mean that just 
+click its completed - playwright also do validation post click - so those post validation will blocked due to js alert.
+- Solution: Handle the dialog and click simultaneously using Promise.all().
+await Promise.all([
+    copyOption.click(),
+    dialogPromise
+]);
+9. WITH await - Locator-based retrying assertions
+10. WITHOUT await - Regular value-comparison assertions
